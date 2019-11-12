@@ -16,6 +16,6 @@ localStorage.setItem("person", JSON.stringify(person));
 
 function obtainLocalstorage(){
 let name = localStorage.getItem("name");
-let person = localStorage.getItem("person");
+let person = JSON.parse(localStorage.getItem("person"));
 
 }
