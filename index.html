@@ -2,10 +2,84 @@
 <html>
     <head>
 
-        <script></script>
+        <script src="index.js"></script>
     </head>
-    <body>
-
         
-    </body>
-</html>
+        <body>
+            <input type="text" id="email"><p>Write your email</p>
+            <input type="text" id="name"><p>Write your name</p>
+            <button onclick="store()" type="button">StoreEmail</button>
+            <h1>Something more complicate</h1>
+
+            <h1>Code Examples</h1>
+            
+	
+	<h2>Code Example 1: Storing and Retrieving Arrays</h2>
+	<p>What do you plan to do tomorrow?</p>
+	<input type="text" id="whatToDo">
+	<button id="addToList">Add to List</button>
+	<button id="deleteList">Delete List</button>
+	<p id="list"></p>
+	<p>Refresh page to see what your list will look like tomorrow.</p>
+	
+	
+	<h2>Code Example 2: Storing and Retrieving Associate Arrays</h2>
+	<p>When is your father's birthday?</p>
+	<select id="month">
+		<option value="Jan">Jan</option>
+		<option value="Feb">Feb</option>
+		<option value="Mar">Mar</option>
+		<option value="Apr">Apr</option>
+		<option value="May">May</option>
+		<option value="Jun">Jun</option>
+		<option value="Jul">Jul</option>
+		<option value="Aug">Aug</option>
+		<option value="Sep">Sep</option>
+		<option value="Oct">Oct</option>
+		<option value="Nov">Nov</option>
+		<option value="Dec">Dec</option>
+	</select>
+	<input type="text" id="day" placeholder="Day" maxlength="2">
+	<input type="text" id="year" placeholder="Year" maxlength="4">
+	<button id="saveBirthday">Save</button>
+	<button id="clearBirthday">Clear</button>
+	<p>Once you've saved the date, refresh the page.</p>
+	<p id="birthdayDisplay"></p>
+	
+	
+	<h2>Code Example 3: Storing and Retrieving Objects</h2>
+	<p>Please choose from the following options:</p>
+	<p>Image:
+		<select id="image">
+			<option value=""></option>
+			<option value="waterfall">Waterfall</option>
+			<option value="mountain">Mountain</option>
+			<option value="meadow">Meadow</option>
+		</select>
+	</p>
+	<p>Quote:
+		<select id="quote">
+			<option value=""></option>
+			<option value="family">Family</option>
+			<option value="success">Success</option>
+			<option value="love">Love</option>
+		</select>
+	</p>
+	<p>Text size:
+		<select id="textSize">
+			<option value=""></option>
+			<option value="small">Small</option>
+			<option value="medium">Medium</option>
+			<option value="large">Large</option>
+		</select>
+	</p>
+	<button id="saveOptions">Save</button>
+	<button id="clearOptions">Clear</button>
+	<p>Refresh the page to see your result.</p>
+	<div id="result">
+		<p id="chosenQuote"></p>
+	</div>
+	
+        </body>
+        </html>
+        
