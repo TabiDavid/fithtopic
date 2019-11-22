@@ -5,7 +5,11 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<h1>Local storage api storing and retrieving simple data, arrays, associative arrays and objects</h1>
 
+<p>Introduce a simple Data and that will be storage in the localstorage even if you refresh the page you can click on the button below to see who was the last person who added
+    the name and email.
+</p>
     <input type="text" id="email"><p>Write your email</p>
     <input type="text" id="name"><p>Write your name</p>
     <button onclick="store()" type="button">Save</button>
@@ -15,26 +19,8 @@
 
 <button type="button" onclick="retrayData()">Press here</button>
 
-<h1>Here is a new way to help others</h1>
-
-</body>
-<script>
-
-function store(){
-
-var inputEmail= document.getElementById("email");
-var name = document.getElementById("name");
-localStorage.setItem("email", inputEmail.value);
-localStorage.setItem("name", name.value);
-}
-
-function retrayData(){
-
-  
-  document.getElementById("Show").innerHTML = "NAME: " + localStorage.getItem("name")+ "<br>" + "EMAIL: " + localStorage.getItem("email");
-}
-</script>
-<body>
+<h2>Now let`s create some array and associative arrays and we will save it into the localStorage</h2>
+<p>Please fill those blank boxes</p>
     <form>
        
             <p>What is your Name</p>
@@ -49,6 +35,7 @@ function retrayData(){
             <p>How old are you?</p>
             <input type="text" id="age">
 
+            <p>Click the button below and you will see all those datas in string, add as many people you want.</p>
             <button id="button">Click to Add</button>
         
 
@@ -57,18 +44,31 @@ function retrayData(){
         </div>
     </form>
 
-<p>Now convert that Associative array in a JSON Object</p>
+<p>After that exercise now we will convert that Associative array in a JSON Object, later them will be printing as a Object.</p>
 
+<p>Press the button to see what happen with all the information that you have saved in the localstorage</p>
 
 <button type="button" onclick="Data()">Press here</button>
 <div id="outPut"></div>
 
-
-<p>Now reatrying all data</p>
-
 <div id="demo"></div>
 
     <script>
+
+function store(){
+
+var inputEmail= document.getElementById("email");
+var name = document.getElementById("name");
+localStorage.setItem("email", inputEmail.value);
+localStorage.setItem("name", name.value);
+}
+
+function retrayData(){
+
+  
+  document.getElementById("Show").innerHTML = "NAME: " + localStorage.getItem("name")+ "<br>" + "EMAIL: " + localStorage.getItem("email");
+}
+
         let people = [];
         
         const addPerson = (ev)=>{
